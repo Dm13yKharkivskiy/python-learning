@@ -35,3 +35,22 @@ if 1 <= choice <= 3:
         print(f"Cередньоарифметичне - {avg_numbers}")
 else:
     print("Неправильний вибір!")
+
+
+# Друге завдання домашньої роботи №2
+
+count_meters = float(input("Введіть кількість метрів: "))
+choice_meters = int(input("В яку одиницю виміру бажаєте перевести метри?:\n1 - милі\n2 - дюйми\n3 - "
+                   "ярди\n"))
+
+if choice_meters == 1:
+    miles = count_meters * 0.000621371
+    print(f"{count_meters} метрів - це {miles} милі")
+elif choice_meters == 2:
+    inches = count_meters * 39.3701
+    print(f"{count_meters} метрів - це {inches} дюйми")
+elif choice_meters == 3:
+    yards = count_meters * 1.09361
+    print(f"{count_meters} метрів - це {yards} ярди")
+else:
+    print("Неправильний вибір!")

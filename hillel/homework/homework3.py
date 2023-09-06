@@ -44,3 +44,32 @@ except ValueError as error:
     print(f"ValueError: {error}")
 except Exception as error:
     print(f"Exception: {error}")
+
+# task 3
+
+try:
+    number_1, number_2 = int(input("Enter first number: ")), int(input("Enter second number: "))
+    select_math_operator = input("Enter operator (+, -, *, /): " )
+
+    match select_math_operator:
+        case "+":
+            sum_numbers = number_1 + number_2
+            print(f"{number_1} {select_math_operator} {number_2} = {sum_numbers}")
+        case "-":
+            diff_numbers = number_1 - number_2
+            print(f"{number_1} {select_math_operator} {number_2} = {diff_numbers}")
+        case "*":
+            mult_numbers = number_1 * number_2
+            print(f"{number_1} {select_math_operator} {number_2} = {mult_numbers}")
+        case "/":
+            div_numbers = number_1 / number_2
+            print(f"{number_1} {select_math_operator} {number_2} = {div_numbers}")
+        case _:
+                raise Exception("Incorrect select operator!")
+except ValueError as error:
+    print("Enter only integer numbers please!")
+    print(f"Value error: {error}")
+except ZeroDivisionError as error:
+    print(f"ZeroDivisionError: {error}")
+except Exception as error:
+    print(f"Error: {error}")

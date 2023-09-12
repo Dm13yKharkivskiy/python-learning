@@ -68,19 +68,55 @@ while i < 10:
     print(i, end=" ")
     i += 1
 
-sum_numbers = 0
-numbers_count = 0
+# sum_numbers = 0
+# numbers_count = 0
+#
+# while True:
+#     user_number = int(input("Enter number: "))
+#
+#     if user_number == 0:
+#         print("end...")
+#         break
+#
+#     sum_numbers += user_number
+#     numbers_count += 1
+#
+# print(f"Sum: {sum_numbers}")
+# avarage = sum_numbers / numbers_count
+# print(f"Avg: {sum_numbers}")
 
-while True:
-    user_number = int(input("Enter number: "))
+# s = "Hello, word!"
+#
+# for letter in s:
+#     print(letter, end=" ")
 
-    if user_number == 0:
-        print("end...")
-        break
+# s = "Hello, world!"
+# print(s[:])
+# print(s[0:])
+# print(s[2:])
+# print(s[2:8])
+# print(s[1:10:2])
+# print(s[::-1])
 
-    sum_numbers += user_number
-    numbers_count += 1
+# Символи і кодування
+# print(ord("A"))
+# print(chr(98))
 
-print(f"Sum: {sum_numbers}")
-avarage = sum_numbers / numbers_count
-print(f"Avg: {sum_numbers}")
+# функції
+
+# text = "hello woRLD"
+# print(text.isalpha())
+# print(text.title())
+# print(text.capitalize())
+
+# text = "hello world"
+# print(text.find("hello"))
+#
+# first_found_index = text.find("l")
+# print(text.find("l", first_found_index + 1))
+
+text = "hello world hello"
+
+# text = text.replace("hello", "goodbye")
+text = text.replace("hello", "goodbye", 1)
+print(text)

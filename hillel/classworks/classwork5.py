@@ -2,16 +2,16 @@
 
 # numbers_1 = []
 # numbers_2 = list()
-# numbers_3 = [1, 3, 25, 7, 2, 7]
+numbers_3 = [1, 3, 25, 7, 2, 7]
 
 # print(type(numbers_1))
 
 # print(*numbers_3)
-# print(numbers_3)
+print(numbers_3)
 #
-# numbers_3[1] = 1111
-# print(numbers_3)
-# print(numbers_3[-1])
+numbers_3[1] = 1111
+print(numbers_3)
+print(numbers_3[-1])
 #
 # for i in range(len(numbers_3)):
 #     print(numbers_3[i], end=" ")
@@ -135,3 +135,4 @@ import random
 #
 # print(matrix)
 
+print(0 % 3)

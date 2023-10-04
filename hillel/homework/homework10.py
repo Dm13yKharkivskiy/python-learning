@@ -6,6 +6,7 @@ import re
 read_file = "text.txt"
 write_file = "new_text.txt"
 pattern = r'[A-z]+\'?[A-z]+'
+length_word = 7
 
 with open(read_file, "r") as text:
     read_original_text = text.read().split()
@@ -17,7 +18,7 @@ with open(write_file, "w") as new_text:
         if bool(word_alphabetic):
             word_for_write = word_alphabetic.group()
 
-            if len(word_for_write) >= 7:
+            if len(word_for_write) >= length_word:
                 new_text.write(word_for_write)
                 new_text.write("\n")
 
